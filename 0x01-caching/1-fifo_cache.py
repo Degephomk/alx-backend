@@ -8,7 +8,6 @@ BaseCaching = __import__('base_caching').BaseCaching
 class FIFOCache(BaseCaching):
     """
     An implementation of FIFO(First In Fisrt Out) Cache
-
     Attributes:
         __keys (list): Stores cache keys in order of entry using `.append`
         __rlock (RLock): Lock accessed resources to prevent race condition
